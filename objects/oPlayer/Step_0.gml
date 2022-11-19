@@ -12,4 +12,6 @@ yDir = moveDown - moveUp;
 inputDirection = point_direction( 0, 0, xDir, yDir );
 inputMagnitude = ( xDir != 0 ) || ( yDir != 0 );
 
-script_execute( state );
+if ( global.paused == false ) {
+	script_execute( state );
+}
