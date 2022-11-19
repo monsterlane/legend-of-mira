@@ -1,14 +1,14 @@
 {
   "resourceType": "GMTileSet",
   "resourceVersion": "1.0",
-  "name": "tCol",
+  "name": "tCollision",
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
   },
   "spriteId": {
-    "name": "sCol",
-    "path": "sprites/sCol/sCol.yy",
+    "name": "sCollision",
+    "path": "sprites/sCollision/sCollision.yy",
   },
   "tileWidth": 16,
   "tileHeight": 16,

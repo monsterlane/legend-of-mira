@@ -16,8 +16,8 @@ inputMagnitude = ( xDir != 0 ) || ( yDir != 0 );
 xSpeed = lengthdir_x( inputMagnitude * speedWalk, inputDirection );
 ySpeed = lengthdir_y( inputMagnitude * speedWalk, inputDirection );
 
-x += xSpeed;
-y += ySpeed;
+// collision
+PlayerCollision( );
 
 // update
 var _oldSprite = sprite_index;
