@@ -21,3 +21,4 @@ spriteIdle = sPlayer;
 
 // state
 state = PlayerStateFree;
+lastState = state;
