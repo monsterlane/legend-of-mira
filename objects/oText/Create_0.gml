@@ -9,3 +9,5 @@ x2Target = RESOLUTION_WIDTH;
 
 lerpProgress = 0;
 textProgress = 0;
+
+background = 0;
