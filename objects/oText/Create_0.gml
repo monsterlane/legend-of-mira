@@ -10,5 +10,5 @@ x2Target = RESOLUTION_WIDTH;
 lerpProgress = 0;
 textProgress = 0;
 
-background = 0;
+background = 1;
 responseSelected = 0;
