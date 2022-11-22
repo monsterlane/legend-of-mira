@@ -11,20 +11,26 @@ keyDown = keyboard_check_pressed( vk_down ) || keyboard_check_pressed( ord( "D" 
 
 responseSelected += ( keyDown - keyUp );
 
-var _max = array_length_1d( responses ) - 1;
+var _max = array_length( responses ) - 1;
 var _min = 0;
 
 if ( responseSelected > _max ) {
 	responseSelected = _min;
-}
+} 
 else if ( responseSelected < _min ) {
 	responseSelected = _max;
 }
 
-if ( keyboard_check_pressed( vk_space ) ) {
+if ( keyboard_check_pressed( ord( "W" ) ) ) {
 	var _messageLength = string_length( textMessage );
 	
 	if ( textProgress >= _messageLength ) {
+		if ( responses[ 0 ] != -1 ) {
+			with ( originInstance ) {
+				DialogueResponses( other.responseScripts[ other.responseSelected ] );
+			}
+		}
+		
 		instance_destroy( );
 		
 		if ( instance_exists( oTextQueued ) ) {

@@ -1,7 +1,7 @@
 
 function ScriptExecuteArray( source, args )
 {
-	var _argLength = array_length_1d( args );
+	var _argLength = array_length( args );
 	
 	if ( _argLength == 1 ) {
 		return script_execute( source, args[ 0 ] );

@@ -9,7 +9,7 @@ draw_set_color( c_black );
 var _print = string_copy( textMessage, 1, textProgress );
 
 if ( responses[ 0 ] != -1 && textProgress >= string_length( textMessage ) ) {
-	for ( var i = 0, len = array_length_1d( responses ); i < len; i++ ) {
+	for ( var i = 0, len = array_length( responses ); i < len; i++ ) {
 		_print += "\n";
 		
 		if ( i == responseSelected ) {
