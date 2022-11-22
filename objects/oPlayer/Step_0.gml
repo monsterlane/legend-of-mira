@@ -14,6 +14,6 @@ inputMagnitude = ( xDir != 0 ) || ( yDir != 0 );
 
 if ( global.paused == false ) {
 	script_execute( state );
-}
+ }
 
 depth = -bbox_bottom;

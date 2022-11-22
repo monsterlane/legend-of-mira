@@ -21,7 +21,6 @@ else if ( responseSelected < _min ) {
 	responseSelected = _max;
 }
 
-
 if ( keyboard_check_pressed( vk_space ) ) {
 	var _messageLength = string_length( textMessage );
 	

@@ -12,4 +12,6 @@ function MACROS( )
 	
 	// init
 	#macro ROOM_START rVillage
+	
+	ini_close( );
 }
