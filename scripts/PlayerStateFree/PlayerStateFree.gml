@@ -42,7 +42,7 @@ function PlayerStateFree( )
 		}
 		
 		// make an npc face the player
-		if ( activated.entityNPC ) {
+		if ( activated != noone && activated.entityNPC ) {
 			with ( activated ) {
 				direction = point_direction( x, y, other.x, other.y );
 				
