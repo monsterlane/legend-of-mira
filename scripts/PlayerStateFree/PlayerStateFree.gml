@@ -24,8 +24,14 @@ function PlayerStateFree( )
 	}
 
 	PlayerAnimateSprite( );
+	
+	// attack
+	if ( attack ) {
+		state = PlayerStateAttack;
+		stateAttack = AttackSlash;
+	}
 
-	// change state
+	// use
 	if ( activate ) {
 		var _activateX = lengthdir_x( 10, direction );
 		var _activateY = lengthdir_y( 10, direction );
@@ -33,20 +39,21 @@ function PlayerStateFree( )
 		activated = instance_position( x + _activateX, y + _activateY, pEntity );
 		
 		if ( activated == noone || activated.entityActivateScript == -1 ) {
+			// nothing to activate
 			state = PlayerStateRoll;
 			moveDistanceRemaining = distanceRoll;
 		}
 		else {
 			// activate the entity
 			ScriptExecuteArray( activated.entityActivateScript, activated.entityActivateArgs );
-		}
-		
-		// make an npc face the player
-		if ( activated != noone && activated.entityNPC ) {
-			with ( activated ) {
-				direction = point_direction( x, y, other.x, other.y );
+
+			// make an npc face the player
+			if ( activated.entityNPC ) {
+				with ( activated ) {
+					direction = point_direction( x, y, other.x, other.y );
 				
-				image_index = CARDINAL_DIR;
+					image_index = CARDINAL_DIR;
+				}
 			}
 		}
 	}

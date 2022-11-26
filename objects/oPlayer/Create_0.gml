@@ -26,4 +26,5 @@ spriteIdle = sPlayer;
 
 // state
 state = PlayerStateFree;
+stateAttack = AttackSlash;
 lastState = state;
