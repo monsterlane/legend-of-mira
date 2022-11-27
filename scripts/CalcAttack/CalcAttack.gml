@@ -14,7 +14,9 @@ function CalcAttack( hitbox )
 				ds_list_add( hitByAttack, hitId );
 				
 				with ( hitId ) {
-					image_blend = c_red;
+					if ( entityHitScript != -1 ) {
+						script_execute( entityHitScript );
+					}
 				}
 			}
 		}
