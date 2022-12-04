@@ -18,6 +18,7 @@ ySpeed = 0;
 
 // animations
 localFrame = 0;
+animationEndScript = -1;
 z = 0;
 
 spriteRoll = sPlayerRoll;

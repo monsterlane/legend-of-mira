@@ -18,6 +18,6 @@ function DropItems( x, y, items )
 		}
 	}
 	else {
-		instance_create_layer( x, y, "Intances", items[ 0 ] );
+		instance_create_layer( x, y, "Instances", items[ 0 ] );
 	}
 }

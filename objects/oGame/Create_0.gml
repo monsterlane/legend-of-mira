@@ -6,6 +6,7 @@ randomize( );
 global.paused = false;
 global.camera = instance_create_layer( 0, 0, layer, oCamera );
 global.textSpeed = 0.75;
+global.lifting = noone;
 
 global.targetRoom = -1;
 global.targetX = -1;
