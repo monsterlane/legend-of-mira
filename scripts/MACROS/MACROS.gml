@@ -12,6 +12,10 @@ function MACROS( )
 
 	// game
 	#macro TRANSITION_SPEED 0.02
+	#macro CARRY_HEIGHT 13
+	#macro GRAVITY 0.1
+	#macro EFFECT_FLASH 0.04
+
 	#macro IN 1
 	#macro OUT 0
 

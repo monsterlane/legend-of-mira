@@ -21,6 +21,7 @@
     {"id":{"name":"sPlayerRoll","path":"sprites/sPlayerRoll/sPlayerRoll.yy",},"order":1,},
     {"id":{"name":"oCamera","path":"objects/oCamera/oCamera.yy",},"order":0,},
     {"id":{"name":"MACROS","path":"scripts/MACROS/MACROS.yy",},"order":0,},
+    {"id":{"name":"PlayerThrow","path":"scripts/PlayerThrow/PlayerThrow.yy",},"order":11,},
     {"id":{"name":"PlayerStateAction","path":"scripts/PlayerStateAction/PlayerStateAction.yy",},"order":10,},
     {"id":{"name":"sTrigger","path":"sprites/sTrigger/sTrigger.yy",},"order":8,},
     {"id":{"name":"oPot","path":"objects/oPot/oPot.yy",},"order":7,},

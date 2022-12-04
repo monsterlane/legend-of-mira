@@ -39,9 +39,15 @@ function PlayerStateFree( )
 		activated = instance_position( x + _activateX, y + _activateY, pEntity );
 		
 		if ( activated == noone || activated.entityActivateScript == -1 ) {
-			// nothing to activate
-			state = PlayerStateRoll;
-			moveDistanceRemaining = distanceRoll;
+			if ( global.lifting != noone ) {
+				// throw something
+				PlayerThrow( );
+			}
+			else {
+				// roll
+				state = PlayerStateRoll;
+				moveDistanceRemaining = distanceRoll;
+			}			
 		}
 		else {
 			// activate the entity
