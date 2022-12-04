@@ -36,6 +36,9 @@ if ( !global.paused ) {
 				if ( entityThrowBreak ) {
 					instance_destroy( );
 				}
+				else if ( entityCollisionOriginal ) {
+					resetCollision = true;
+				}
 			}
 		}
 		else {
@@ -57,3 +60,8 @@ if ( !global.paused ) {
 }
 
 flash = max( flash - EFFECT_FLASH, 0 );
+
+if ( resetCollision && !place_meeting( x, y , oPlayer ) ) {
+	resetCollision = false;
+	entityCollision = false;
+}

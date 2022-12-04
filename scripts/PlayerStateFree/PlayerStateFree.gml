@@ -24,7 +24,7 @@ function PlayerStateFree( )
 	}
 
 	PlayerAnimateSprite( );
-	
+
 	// attack
 	if ( attack ) {
 		state = PlayerStateAttack;
@@ -33,12 +33,40 @@ function PlayerStateFree( )
 
 	// use
 	if ( activate ) {
-		var _activateX = lengthdir_x( 10, direction );
-		var _activateY = lengthdir_y( 10, direction );
+		var _activateX = x + lengthdir_x( 10, direction );
+		var _activateY = y + lengthdir_y( 10, direction );
 		
-		activated = instance_position( x + _activateX, y + _activateY, pEntity );
+		var _activateSize = 4;
+		var _activateList = ds_list_create( );
+
+		activated = noone;
 		
-		if ( activated == noone || activated.entityActivateScript == -1 ) {
+		var _entitiesFound = collision_rectangle_list(
+			_activateX - _activateSize,
+			_activateY - _activateSize,
+			_activateX + _activateSize,
+			_activateY + _activateSize,
+			pEntity,
+			false,
+			true,
+			_activateList,
+			true
+		);
+
+		// find the best entity to activate
+		while ( _entitiesFound > 0 ) {
+			var _check = _activateList[| --_entitiesFound ];
+
+			if ( _check != global.lifting && _check.entityActivateScript != -1 ) {
+				activated = _check;
+
+				break;
+			}
+		}
+
+		ds_list_destroy( _activateList );
+		
+		if ( activated == noone ) {
 			if ( global.lifting != noone ) {
 				// throw something
 				PlayerThrow( );

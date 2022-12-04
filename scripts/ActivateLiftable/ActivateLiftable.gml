@@ -10,6 +10,7 @@ function ActivateLiftable( target_id )
 			lifted = true;
 
 			persistent = true;
+			entityCollision = false;
 		}
 	}
 }
