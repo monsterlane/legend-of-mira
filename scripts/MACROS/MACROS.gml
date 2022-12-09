@@ -18,9 +18,16 @@ function MACROS( )
 
 	#macro IN 1
 	#macro OUT 0
+	
+	enum ENEMY_STATE {
+		IDLE,
+		WANDER,
+		CHASE,
+		ATTACK,
+		DIE,
+		WAIT
+	}
 
 	// init
 	#macro ROOM_START rVillage
-
-	ini_close( );
 }
