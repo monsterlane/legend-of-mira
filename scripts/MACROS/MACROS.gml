@@ -20,12 +20,13 @@ function MACROS( )
 	#macro OUT 0
 	
 	enum ENEMY_STATE {
-		IDLE,
-		WANDER,
-		CHASE,
 		ATTACK,
+		CHASE,
 		DIE,
-		WAIT
+		HURT,
+		IDLE,
+		WAIT,
+		WANDER
 	}
 
 	// init
