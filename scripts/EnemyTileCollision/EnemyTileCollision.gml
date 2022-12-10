@@ -11,6 +11,7 @@ function EnemyTileCollision( )
 		}
 
 		xSpeed = 0;
+
 		_collision = true;
 	}
 
@@ -24,6 +25,7 @@ function EnemyTileCollision( )
 		}
 
 		ySpeed = 0;
+
 		_collision = true;
 	}
 

@@ -1,9 +1,9 @@
 
-function PlayerAnimation( sprite, endScript = -1 )
+function PlayerAnimation( _sprite, _endScript = -1 )
 {
 	state = PlayerStateAction;
-	sprite_index = sprite;
-	animationEndScript = endScript;
+	sprite_index = _sprite;
+	animationEndScript = _endScript;
 
 	localFrame = 0;
 	image_index = 0;

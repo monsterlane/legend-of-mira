@@ -1,15 +1,16 @@
 
-function ActivateLiftable( target_id )
+function ActivateLiftable( _target )
 {
 	if ( global.lifting == noone ) {
 		PlayerAnimation( sPlayerLift );
 
-		global.lifting = target_id;
+		global.lifting = _target;
 
 		with ( global.lifting ) {
 			lifted = true;
 
 			persistent = true;
+
 			entityCollision = false;
 		}
 	}
