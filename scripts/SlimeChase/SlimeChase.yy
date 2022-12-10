@@ -1,7 +1,7 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "SlimeWander",
+  "name": "SlimeChase",
   "isDnD": false,
   "isCompatibility": false,
   "parent": {

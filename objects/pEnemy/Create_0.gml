@@ -15,13 +15,16 @@ timePassed = 0;
 waitDuration = 0;
 wait = 0;
 
+aggroCheck = 0;
+aggroCheckDuration = 5;
+
 // enemy sprites
 spriteMove = sSlime;
 
 // enemy scripts
-enemyScript[ENEMY_STATE.ATTACK] = -1;
-enemyScript[ENEMY_STATE.CHASE] = -1;
-enemyScript[ENEMY_STATE.DIE] = -1;
-enemyScript[ENEMY_STATE.IDLE] = -1;
-enemyScript[ENEMY_STATE.WAIT] = -1;
-enemyScript[ENEMY_STATE.WANDER] = -1;
+enemyScript[ ENEMY_STATE.ATTACK ] = -1;
+enemyScript[ ENEMY_STATE.CHASE ] = -1;
+enemyScript[ ENEMY_STATE.DIE ] = -1;
+enemyScript[ ENEMY_STATE.IDLE ] = -1;
+enemyScript[ ENEMY_STATE.WAIT ] = -1;
+enemyScript[ ENEMY_STATE.WANDER ] = -1;

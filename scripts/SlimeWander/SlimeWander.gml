@@ -3,8 +3,8 @@ function SlimeWander( )
 {
 	sprite_index = spriteMove;
 
-	// reached goal
 	if ( ( x == xTo ) && ( y == yTo ) ) || ( timePassed > enemyWanderDistance / enemySpeed ) {
+		// reached goal
 		xSpeed = 0;
 		ySpeed = 0;
 		
@@ -49,5 +49,16 @@ function SlimeWander( )
 		// interact
 		EnemyTileCollision( );
 		
+	}
+	
+	// check for aggro
+	if ( ++aggroCheck >= aggroCheckDuration ) {
+		aggroCheck = 0;
+		
+		if ( instance_exists( oPlayer ) ) && ( point_distance( x, y, oPlayer.x, oPlayer.y ) <= enemyAggroRadius ) {
+			state = ENEMY_STATE.CHASE;
+			
+			target = oPlayer;
+		}
 	}
 }
