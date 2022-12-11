@@ -1,7 +1,9 @@
 
 // progress transition
 with ( oPlayer ) {
-	state = PlayerStateTransition;
+	if ( state != PlayerStateDead ) {
+		state = PlayerStateTransition;
+	}
 }
 
 if ( leading == OUT ) {

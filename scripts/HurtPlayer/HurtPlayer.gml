@@ -5,7 +5,7 @@ function HurtPlayer( _direction, _damage, _force = 0 )
 		global.playerHealth = max( 0, global.playerHealth - _damage );
 		
 		if ( global.playerHealth > 0 ) {
-			with( oPlayer ) {
+			with ( oPlayer ) {
 				state = PlayerStateBonk;
 
 				direction = _direction - 180;
@@ -20,7 +20,9 @@ function HurtPlayer( _direction, _damage, _force = 0 )
 			}
 		}
 		else {
-			// kill player
+			with ( oPlayer ) {
+				state = PlayerStateDead;
+			}
 		}
 	}
 }

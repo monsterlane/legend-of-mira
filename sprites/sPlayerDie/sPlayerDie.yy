@@ -1,7 +1,7 @@
 {
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
-  "name": "sPlayerHurt",
+  "name": "sPlayerDie",
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
@@ -28,15 +28,15 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9a0c600e-f789-4e63-9da7-6773823fdd8b",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"256bbda7-aa14-43d7-8b95-ee6eef4d3189",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e288f35c-0826-4ab0-bbd9-40fc519abec4",},
     {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6794f0ee-33f4-489d-8686-125daf820171",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9a0c600e-f789-4e63-9da7-6773823fdd8b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"256bbda7-aa14-43d7-8b95-ee6eef4d3189",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
     "resourceVersion": "1.4",
-    "name": "sPlayerHurt",
+    "name": "sPlayerDie",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 15.0,
@@ -48,10 +48,10 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"3c76f78b-2f5b-4bdb-8801-24036c040ab6","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9a0c600e-f789-4e63-9da7-6773823fdd8b","path":"sprites/sPlayerHurt/sPlayerHurt.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"9d8c9643-b255-44a2-acaa-673143de97d4","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"256bbda7-aa14-43d7-8b95-ee6eef4d3189","path":"sprites/sPlayerHurt/sPlayerHurt.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"dcc02abe-9cb7-44c2-8061-6c0f5e39b6a9","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e288f35c-0826-4ab0-bbd9-40fc519abec4","path":"sprites/sPlayerHurt/sPlayerHurt.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"9c2bf905-6925-4cd1-b0a7-c877e9c126aa","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6794f0ee-33f4-489d-8686-125daf820171","path":"sprites/sPlayerHurt/sPlayerHurt.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"b7e028f8-ed7f-4aac-a9f7-190009c25e3e","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"e288f35c-0826-4ab0-bbd9-40fc519abec4","path":"sprites/sPlayerDie/sPlayerDie.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"e8e0861d-04ef-4f9c-9730-15306b91755d","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6794f0ee-33f4-489d-8686-125daf820171","path":"sprites/sPlayerDie/sPlayerDie.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"7e5a605f-4cb2-406a-9112-9304c7956064","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9a0c600e-f789-4e63-9da7-6773823fdd8b","path":"sprites/sPlayerDie/sPlayerDie.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"bcf1620c-9c3e-475c-9db0-2833b2502df3","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"256bbda7-aa14-43d7-8b95-ee6eef4d3189","path":"sprites/sPlayerDie/sPlayerDie.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,

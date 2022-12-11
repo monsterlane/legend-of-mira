@@ -1,7 +1,7 @@
 
 // room transition
 if ( instance_exists( oPlayer ) ) && ( position_meeting( oPlayer.x, oPlayer.y, id ) ) {
-	if ( !instance_exists( oTransition ) ) {
+	if ( !instance_exists( oTransition ) ) && ( oPlayer.state != PlayerStateDead ) {
 		global.targetRoom = targetRoom;
 		global.targetX = targetX;
 		global.targetY = targetY;
