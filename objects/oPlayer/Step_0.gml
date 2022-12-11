@@ -16,6 +16,9 @@ inputMagnitude = ( xDir != 0 ) || ( yDir != 0 );
 
 if ( global.paused == false ) {
 	script_execute( state );
+	
+	invulnerable = max( invulnerable - 1, 0 );
+	flash = max( flash - 0.05, 0 );
 }
 
 depth = -bbox_bottom;
