@@ -29,7 +29,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "World",
-    "path": "folders/Objects/World.yy",
+    "name": "Base Objects",
+    "path": "folders/Objects/World/Base Objects.yy",
   },
 }

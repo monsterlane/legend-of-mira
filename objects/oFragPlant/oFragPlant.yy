@@ -33,7 +33,7 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"bounceCount","path":"objects/oFragment/oFragment.yy",},"objectId":{"name":"oFragment","path":"objects/oFragment/oFragment.yy",},"value":"2",},
   ],
   "parent": {
-    "name": "World",
-    "path": "folders/Objects/World.yy",
+    "name": "Plants",
+    "path": "folders/Objects/World/Plants.yy",
   },
 }

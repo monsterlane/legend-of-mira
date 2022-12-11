@@ -36,7 +36,7 @@
     {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"entityFragment","path":"objects/pEntity/pEntity.yy",},"objectId":{"name":"pEntity","path":"objects/pEntity/pEntity.yy",},"value":"oFragPlant",},
   ],
   "parent": {
-    "name": "World",
-    "path": "folders/Objects/World.yy",
+    "name": "Plants",
+    "path": "folders/Objects/World/Plants.yy",
   },
 }
