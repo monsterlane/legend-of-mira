@@ -10,10 +10,10 @@ for ( var i = 1; i <= _playerHealthMax; i++ ) {
 	var _imageIndex = ( i > _playerHealth );
 	
 	if ( i == _playerHealth + 1 ) {
-		_imageIndex += ( _playerHealthFraction > 0 );
-		_imageIndex += ( _playerHealthFraction > 0.25 );
-		_imageIndex += ( _playerHealthFraction > 0.5 );
+		_imageIndex += floor( _playerHealthFraction * 4 );
 	}
 	
 	draw_sprite( sHealth, _imageIndex, 8 + ( ( i - 1 ) * 16 ), 8 );
+
+	display_set_gui_size( RESOLUTION_WIDTH, RESOLUTION_HEIGHT );
 }
