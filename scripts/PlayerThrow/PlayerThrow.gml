@@ -18,8 +18,7 @@ function PlayerThrow( )
 		xstart = x;
 		ystart = y;
 	}
-	
+
 	PlayerAnimation( sPlayerLift );
-	
-	global.lifting = noone;
+	PlayerDropItems( );
 }

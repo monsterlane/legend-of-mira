@@ -7,7 +7,10 @@ global.paused = false;
 global.camera = instance_create_layer( 0, 0, layer, oCamera );
 global.ui = instance_create_layer( 0, 0, layer, oUI );
 global.textSpeed = 0.75;
+
 global.lifting = noone;
+global.questStatus = ds_map_create( );
+global.questStatus[? "TheHatQuest" ] = 0;
 
 global.targetRoom = -1;
 global.targetX = -1;

@@ -98,7 +98,7 @@
     "resourceType": "GMNineSliceData",
   },
   "parent": {
-    "name": "World",
-    "path": "folders/Sprites/World.yy",
+    "name": "Signposts",
+    "path": "folders/Sprites/World/Signposts.yy",
   },
 }
