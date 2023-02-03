@@ -11,3 +11,6 @@ resetCollision = false;
 
 // shaders
 uFlash = shader_get_uniform( shWhiteFlash, "flash" );
+
+// drops
+entityDropList = -1;

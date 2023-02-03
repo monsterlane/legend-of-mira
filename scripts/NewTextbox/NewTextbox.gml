@@ -1,14 +1,14 @@
 
-function NewTextbox( _message, _bgId = 1, _responseList = [-1] )
-{	
-	var _obj = ( instance_exists( oText ) ) ? oTextQueued: oText;
+function NewTextbox( _message, _background = 1, _responseList = [-1] )
+{
+	var _obj = ( instance_exists( oText ) ) ? oTextQueued : oText;
 
 	with ( instance_create_layer( 0, 0, "Instances", _obj ) ) {
 		textMessage = _message;
 		
 		originInstance = ( instance_exists( other ) ) ? other.id : noone;
 		
-		background = _bgId;
+		background = _background;
 
 		if ( _responseList[ 0 ] != -1 ) {
 			for ( var i = 0, len = array_length( _responseList ); i < len; i++ ) {
