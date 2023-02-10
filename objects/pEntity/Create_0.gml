@@ -1,3 +1,4 @@
+/// @desc Base entity
 
 // defaults
 z = 0;
