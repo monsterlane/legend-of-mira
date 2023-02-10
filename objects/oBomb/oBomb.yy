@@ -9,7 +9,10 @@
     "name": "Entities",
     "path": "folders/Objects/Entities.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "pCollectable",
+    "path": "objects/pCollectable/pCollectable.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -25,7 +28,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "sBomb",
+    "path": "sprites/sBomb/sBomb.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }
